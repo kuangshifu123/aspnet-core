@@ -15,7 +15,7 @@ namespace SnkrsMonitor
         //,
         //typeof(AbpPermissionManagementHttpApiModule),
         //typeof(AbpTenantManagementHttpApiModule),
-        //typeof(AbpFeatureManagementHttpApiModule)
+        //typeof(AbpFeatureManagementHttpApiModule)1
         )]
     public class SnkrsMonitorHttpApiModule : AbpModule
     {
