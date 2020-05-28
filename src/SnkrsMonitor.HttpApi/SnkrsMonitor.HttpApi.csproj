@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SnkrsMonitor</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\SnkrsMonitor.HttpApi.Hosting\SnkrsMonitor.HttpApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="2.8.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="2.8.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="2.8.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="2.8.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnkrsMonitor.Application\SnkrsMonitor.Application.csproj" />
+  </ItemGroup>
+
+</Project>

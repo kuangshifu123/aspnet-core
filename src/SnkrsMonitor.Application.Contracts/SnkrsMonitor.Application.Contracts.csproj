@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>..\SnkrsMonitor.HttpApi.Hosting\SnkrsMonitor.Application.Contracts.xml</DocumentationFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnkrsMonitor.Domain.Shared\SnkrsMonitor.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
