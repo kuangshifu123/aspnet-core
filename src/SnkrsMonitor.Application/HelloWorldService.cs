@@ -8,7 +8,7 @@ namespace SnkrsMonitor
     {
         public string HelloWorld()
         {
-            return "Hello World";
+            return "Hello World1";
         }
     }
 }
